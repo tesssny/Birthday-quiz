@@ -59,11 +59,11 @@ if month== "September" or month=="October" or month=="November":
     
 if year>=2000:      
     age="two thousands"
-if year<=1999 and >=1990
+if year<=1999 and year>=1990:
     age="nineties"
-if year<=1989 and >=1980
+if year<=1989 and year>=1980:
     age="eighties"
-else:
+if year<1980:
     age="Stone Age"
     
 print(name+", you are a "+season+" baby of the "+age+".")
