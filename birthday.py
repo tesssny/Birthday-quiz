@@ -1,7 +1,7 @@
 """
 birthday.py
 Author: Tess Snyder
-Credit: Mary Feyrer
+Credit: Mary Feyrer, Adam Glueck
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -38,12 +38,19 @@ todaydate = datetime.today().day
 
 name=input("Hello, what is your name? ")
 month=input("Hi " +name+", what was the name of the month you were born in? ")
-month = month.upper() # change to upper case
 
 year=input("And what year were you born in, "+name+"? ")
 day=int(input("And the day? "))
 
-if month=="October" and day==31:
+if month == "October" and day == 31:
     print("You were born on Halloween!")
+    
+if month == month_name[todaymonth] and day == todaydate :
+    print("Happy birthday!")
+    
+if month== "December" or month=="January" or month=="February":
+    season="winter"
+if month== "March" or month=="April" or month=="May":
+    season="spring"
     
     
