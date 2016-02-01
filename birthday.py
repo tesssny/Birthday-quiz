@@ -52,5 +52,9 @@ if month== "December" or month=="January" or month=="February":
     season="winter"
 if month== "March" or month=="April" or month=="May":
     season="spring"
+if month== "June" or month=="July" or month=="August":
+    season="summer"
+if month== "September" or month=="October" or month=="November":
+    season="fall"
     
     
