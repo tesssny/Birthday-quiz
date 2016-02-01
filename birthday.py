@@ -39,7 +39,7 @@ todaydate = datetime.today().day
 name=input("Hello, what is your name? ")
 month=input("Hi " +name+", what was the name of the month you were born in? ")
 
-year=input("And what year were you born in, "+name+"? ")
+year=int(input("And what year were you born in, "+name+"? "))
 day=int(input("And the day? "))
 
 if month == "October" and day == 31:
@@ -56,5 +56,18 @@ if month== "June" or month=="July" or month=="August":
     season="summer"
 if month== "September" or month=="October" or month=="November":
     season="fall"
+    
+if year>=2000:      
+    age="two thousands"
+if year<=1999 and >=1990
+    age="nineties"
+if year<=1989 and >=1980
+    age="eighties"
+else:
+    age="Stone Age"
+    
+print(name+", you are a "+season+" baby of the "+age+".")
+
+
     
     
