@@ -68,7 +68,7 @@ else:
             age="eighties"
         if year<1980:
             age="Stone Age"
-    print(name+", you are a "+season+" baby of the "+age+".")
+        print(name+", you are a "+season+" baby of the "+age+".")
 
 
     
