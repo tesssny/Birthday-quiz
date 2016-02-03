@@ -42,31 +42,33 @@ month=input("Hi " +name+", what was the name of the month you were born in? ")
 year=int(input("And what year were you born in, "+name+"? "))
 day=int(input("And the day? "))
 
+
 if month == "October" and day == 31:
     print("You were born on Halloween!")
+
+else:
+    if month == month_name[todaymonth] and day == todaydate :
+        print("Happy birthday!")
     
-if month == month_name[todaymonth] and day == todaydate :
-    print("Happy birthday!")
+    else:
+        if month== "December" or month=="January" or month=="February":
+            season="winter"
+        if month== "March" or month=="April" or month=="May":
+            season="spring"
+        if month== "June" or month=="July" or month=="August":
+            season="summer"
+        if month== "September" or month=="October" or month=="November":
+            season="fall"
     
-if month== "December" or month=="January" or month=="February":
-    season="winter"
-if month== "March" or month=="April" or month=="May":
-    season="spring"
-if month== "June" or month=="July" or month=="August":
-    season="summer"
-if month== "September" or month=="October" or month=="November":
-    season="fall"
-    
-if year>=2000:      
-    age="two thousands"
-if year<=1999 and year>=1990:
-    age="nineties"
-if year<=1989 and year>=1980:
-    age="eighties"
-if year<1980:
-    age="Stone Age"
-    
-print(name+", you are a "+season+" baby of the "+age+".")
+        if year>=2000:      
+            age="two thousands"
+        if year<=1999 and year>=1990:
+            age="nineties"
+        if year<=1989 and year>=1980:
+            age="eighties"
+        if year<1980:
+            age="Stone Age"
+    print(name+", you are a "+season+" baby of the "+age+".")
 
 
     
